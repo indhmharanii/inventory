@@ -1,7 +1,5 @@
-<?php
-
-use Illuminate\Support\Facades\Route;
-
-Route::get('test', function () {
-    return response()->json(['message' => 'OK']);
+Route::get('/hello', function () {
+    return response()->json([
+        'message' => 'Hello Indah!'
+    ]);
 });
